@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Найди число!</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      #parent {
+        text-align: center;
+      }
+      #field {
+        display: inline-block;
+        user-select: none;
+      }
+
+      #field td {
+        padding: 30px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      .active {
+        background: rgb(226, 12, 12);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <table id="field"></table>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
